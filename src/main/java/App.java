@@ -16,5 +16,9 @@ public class App {
 
         }, new HandlebarsTemplateEngine());
 
+        get("/favorite_photos", (request, response) -> {
+            return new ModelAndView(new HashMap(), "favorite_photos.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 }
